@@ -1,12 +1,13 @@
+
 /**
  * Author: Heather Corey
  * jQuery Simple Parallax Plugin
  *
  */
 
-(function($) {
+(function ($) {
 
-    $.fn.parallax = function(options) {
+    $.fn.parallax = function (options) {
 
         var windowHeight = $(window).height();
 
@@ -16,7 +17,7 @@
         }, options);
 
         // Iterate over each object in collection
-        return this.each( function() {
+        return this.each( function () {
 
         	// Save a reference to the element
         	var $this = $(this);
