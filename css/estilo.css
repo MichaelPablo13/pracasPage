@@ -10,22 +10,37 @@ section {
 }
 
 .bg-1 {
-	background-image: url(/img/remanco_das_aguas.jpg);
+	background-image: url(/img/chico_mendes.jpg);
     background-repeat: no-repeat;
-    background-position:  center center;
+    background-position:  center top;
     background-attachment:  fixed;
     color:#fff;
     background-size:cover;
 }
 
 .bg-2 {
-	background: url(/img/remanco_das_aguas.jpg) no-repeat top center fixed;
+	background: url(/img/remanco_das_aguas.jpg) ;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
     color:#fff;
     background-size:cover;
 }
 
 .bg-3 {
-	background: url(/img/remanco_das_aguas.jpg) no-repeat bottom center fixed;
+	background-image: url(/img/dorothy_stang.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-4 {
+	background-image: url(/img/parque_santa_clara.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
     color:#fff;
     background-size:cover;
 }
