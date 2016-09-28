@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
+$(function () {
 
-   <head>
-     <!-- <script src = "https://maps.googleapis.com/maps/api/js"></script> -->
-
-
-
-      <script>
-         function loadMap() {
+     function loadMap() {
 
             //mapoptions for  chico_mendes, remanco_das_aguas, santa_clara and dorothy_stang
             var mapOptions_chico_mendes = {
@@ -66,23 +59,9 @@
                 map: map_dorothy_stang,
 
             });
+
+            google.maps.event.addDomListener(window, 'load', loadMap);// load map with the function loadMap()
+            window.document.body.addEventListener('load', loadMap);
+
          }
-
-        // google.maps.event.addDomListener(window, 'load', loadMap);// load map with the function loadMap()
-      </script>
-
-   </head>
-
-   <body onload="loadMap()">
-      <div id = "chico_mendes" style = "width:770px; height:580px;"></div>
-      <div id = "remanco_das_aguas" style = "width:770px; height:580px;"></div>
-      <div id = "santa_clara" style = "width:770px; height:580px;"></div>
-      <div id = "dorothy_stang" style = "width:770px; height:580px;"></div>
-
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_-6LcLmk9EZJkAgP_KB9rrcPp2NPSxcE&callback=loadMap">
-    </script>
-
-   </body>
-
-</html>
+});
